@@ -5,37 +5,41 @@
   <div class="row">
     <hr/>
     <img id="coffee-banner"
-      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffoto-gratis%2Fcierrese-encima-granos-cafe-asados-pequeno-saco-tabla-madera_30478-2364.jpg%3Fsize%3D626%26ext%3Djpg&f=1&nofb=1&ipt=86fc6c781941aaae99a3b65ef8255e804260994bf4591fdb2906e79f267cc000&ipo=images"
-      class="img-fluid" alt="café de cammpo">
+         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffoto-gratis%2Fcierrese-encima-granos-cafe-asados-pequeno-saco-tabla-madera_30478-2364.jpg%3Fsize%3D626%26ext%3Djpg&f=1&nofb=1&ipt=86fc6c781941aaae99a3b65ef8255e804260994bf4591fdb2906e79f267cc000&ipo=images"
+         class="img-fluid" alt="café de cammpo">
   </div>
   <div class="row">
     <hr/>
-    <table class="table">
-      <thead class="table-dark">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Tipo</th>
-        <th scope="col">Región</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let coffeeType of coffeeTypes">
-        <th scope="row">{{coffeeType.id}}</th>
-        <td>{{coffeeType.nombre}}</td>
-        <td>{{coffeeType.tipo}}</td>
-        <td>{{coffeeType.region}}</td>
-      </tr>
-      </tbody>
-    </table>
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Región</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let coffeeType of coffeeTypes">
+          <th scope="row">{{coffeeType.id}}</th>
+          <td>{{coffeeType.nombre}}</td>
+          <td>{{coffeeType.tipo}}</td>
+          <td>{{coffeeType.region}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <div class="row">
-    <span>Total café de origen: 3</span>
+    <span>Total café de origen: {{originCoffeeQuantity}}</span>
   </div>
   <div class="row">
-    <span>Total café blend: 3</span>
+    <span>Total café blend: {{blendCoffeeQuantity}}</span>
   </div>
+  <br>
+  <br>
   <div class="row">
-    <span>Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico </span>
+    <p class="text-center">Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico </p>
   </div>
 </div>
